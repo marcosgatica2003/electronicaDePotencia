@@ -1,0 +1,12 @@
+* Schematics Netlist *
+
+
+
+D_D1         $N_0001 $N_0002 Dbreak 
+M_M3         $N_0001 $N_0003 0 0 IRFP250
+C_C1         0 $N_0002  50u  
+V_V2         $N_0003 0 DC 0 AC 0
++PULSE 0 10 0 10n 10n 23.38u 33.4u
+L_L1         $N_0004 $N_0001  100uH  
+R_RCarga         0 $N_0002  50  
+V_V1         $N_0004 0 DC 18 AC 0 
